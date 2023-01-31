@@ -87,11 +87,11 @@ const PasswordGenerator = () => {
       </div>
       <br />
       <br />
-      <p>
+      <p className="slider-description">
         Use the slider, and select from the options, below, to lengthen your
         password and strengthen your security.
       </p>
-      <p>Password Length (4-64)</p>
+      <p className="password-length-description">Password Length (4-64)</p>
       <input
         type="range"
         min="4"
@@ -102,7 +102,7 @@ const PasswordGenerator = () => {
       />
       <br />
       <br />
-      <span style={{ paddingLeft: "10px" }}>{length}</span>
+      <span className="length" style={{ paddingLeft: "10px" }}>{length}</span>
     </div>
   );
 };
