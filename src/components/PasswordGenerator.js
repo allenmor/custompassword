@@ -92,14 +92,16 @@ const PasswordGenerator = () => {
         password and strengthen your security.
       </p>
       <p className="password-length-description">Password Length (4-64)</p>
+      <div className="slider-container">
       <input
         type="range"
         min="4"
         max="64"
         value={length}
         onChange={handleLengthChange}
-        style={{ width: "80%", display: "inline-block" }}
+        style={{ width: "95%", display: "inline-block" }}
       />
+      </div>
       <br />
       <br />
       <span className="length" style={{ paddingLeft: "10px" }}>{length}</span>
